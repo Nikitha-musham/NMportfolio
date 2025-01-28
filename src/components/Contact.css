@@ -1,0 +1,31 @@
+
+.hero1-img{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 60vh;
+    position: relative;
+   }
+   .hero1-img::before{
+    content: "";
+    background: url("../assets/contact.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+   }
+   @media (max-width: 768px) {
+    .hero1-img {
+      height: 200px; /* Reduce height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero1-img {
+      height: 150px; /* Further reduce height on very small screens */
+    }
+  }
+   

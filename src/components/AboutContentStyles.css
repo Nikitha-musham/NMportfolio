@@ -1,0 +1,140 @@
+/* AboutContentStyles.css */
+
+/* Overall Layout */
+.about {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   gap: 30px;
+ }
+ 
+ /* Top Section */
+ .top-section {
+   text-align: center;
+ }
+ 
+ .img-container {
+   margin-bottom: 20px;
+ }
+ 
+ .img {
+   width: 100%;
+   max-width: 300px;
+   height: auto;
+   border-radius: 10px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .intro-text {
+   font-size: 16px;
+   color: #ffffff;
+   margin-top: 10px;
+   line-height: 1.6;
+ }
+ 
+ /* Bottom Section */
+ .bottom-section {
+   width: 100%;
+   max-width: 800px;
+ }
+ 
+ /* Headings */
+ h3 {
+   font-size: 20px;
+   color: #007bff;
+   margin-bottom: 10px;
+ }
+ 
+ /* Skills List */
+ .skills-list {
+   list-style-type: disc;
+   margin-left: 20px;
+   padding-left: 10px;
+   line-height: 1.8;
+ }
+ 
+ .skills-list li {
+   font-size: 16px;
+   color: #ffffff;
+ }
+ 
+ /* Timeline Styles */
+ .timeline {
+   position: relative;
+   padding-left: 40px;
+   margin: 20px 0;
+   border-left: 2px solid #007bff;
+ }
+ 
+ .timeline-item {
+   position: relative;
+   margin-bottom: 20px;
+ }
+ 
+ .timeline-dot {
+   position: absolute;
+   top: 0;
+   left: -6px;
+   width: 12px;
+   height: 12px;
+   background-color: #007bff;
+   border-radius: 50%;
+   border: 2px solid white;
+ }
+ 
+ .timeline-content {
+   margin-left: 20px;
+ }
+ 
+ .timeline-content h4 {
+   font-size: 18px;
+   color: #ffffff;
+   margin-bottom: 5px;
+ }
+ 
+ .timeline-content p {
+   font-size: 16px;
+   color: #ffffff;
+   margin: 0;
+ }
+ 
+ /* Button Section */
+ .button-container {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+ }
+ 
+ .btn {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .btn:hover {
+   background-color: #0056b3;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .bottom-section {
+     padding: 0 20px;
+   }
+ 
+   .button-container {
+     flex-wrap: wrap;
+   }
+ 
+   .btn {
+     width: 100%;
+     max-width: 200px;
+     text-align: center;
+   }
+ }
+ 
