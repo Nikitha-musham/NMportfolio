@@ -30,8 +30,8 @@ const Form = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <input type="text" name="to_name" required placeholder="Enter your Name" />
-      <input type="email" name="from_name" required placeholder="Enter your Email" />
+      <input type="text" name="from_name" required placeholder="Enter your Name" />
+      <input type="email" name="from_mail" required placeholder="Enter your Email" />
       <textarea name="message" required placeholder="Message" />
       <input type="submit" value="Send" />
     </form>
